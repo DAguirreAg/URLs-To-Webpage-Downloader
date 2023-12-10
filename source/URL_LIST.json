@@ -1,0 +1,19 @@
+
+{
+    "hourly": [],
+    "daily": [
+        {
+            "url": "https://github.com/SeleniumHQ/docker-selenium",
+            "save_to_path": "/home/daniel/Documents/GitHub/Simple-Webpage-Downloader/source/downloads"
+        },
+        {
+            "url": "https://github.com/SeleniumHQ/docker-selenium",
+            "save_to_path": "/home/daniel/Documents/GitHub/Simple-Webpage-Downloader/source/downloads"
+        }
+    ],
+    "weekly": [],
+    "monthly": [],
+    "yearly": []
+}
+
+
