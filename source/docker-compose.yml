@@ -1,0 +1,23 @@
+version: '3.6'
+
+services:
+
+  selenium_standalone_chrome:
+    image: selenium/standalone-chrome
+    #image: seleniarm/standalone-chromium:latest # Use this when running in an ARM architecture machine (like a Raspberry Pi)
+    privileged: true
+    shm_size: 2g
+    ports:
+      - "4444:4444"
+    expose:
+      - "4444"
+
+  data-engineering:
+    image: test-de
+    ports:
+      - "8001:80"
+    expose:
+      - "80"
+    volumes:
+      - /home/daniel/Documents/GitHub/Simple-Webpage-Downloader/source/downloads:/usr/src/app/downloads
+      - /home/daniel/Documents/GitHub/Simple-Webpage-Downloader/source/URL_LIST.json:/usr/src/app/URL_LIST.json

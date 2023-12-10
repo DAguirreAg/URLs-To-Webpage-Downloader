@@ -4,7 +4,7 @@ class Config:
     FREQUENCIES = ['hourly', 'daily', 'weekly', 'monthly', 'yearly']
 
     # SELENIUM SETTINGS
-    SELENIUM_URL = 'http://localhost:4444'
+    SELENIUM_URL = 'http://source-selenium_standalone_chrome-1:4444'
 
     # DRIVER SETTINGS
     IMPLICIT_WAIT_TIME = 5 #seconds
