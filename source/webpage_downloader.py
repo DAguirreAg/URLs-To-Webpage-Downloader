@@ -43,7 +43,7 @@ def download_webpages(Config: Config, urls: List[Dict[str, str]]):
     
             # Download and save a webpage
             try:
-                pass#download_webpage(driver, url, Config.WAIT_PAUSE_TIME, save_to_path)
+                download_webpage(driver, url, Config.WAIT_PAUSE_TIME, save_to_path)
 
             except Exception as e:
                 errors.append(f'url: {url}. Error: {e}')
@@ -58,13 +58,21 @@ def download_webpages(Config: Config, urls: List[Dict[str, str]]):
     if errors:
         raise Exception(f'ERRORs found: {errors}')
 
-if __name__=='__main__':
+def main(frequency):
 
     # Load URLS list
     url_list = utils.load_json(Config.URL_LIST)
 
+    # Get urls to download
+    urls = url_list[frequency]
+
+    # Download webpages
+    download_webpages(Config, urls)
+
+if __name__=='__main__':
+
     # Loop over all the frequencies
-    for frequency in ['hourly', 'daily', 'weekly', 'monthly', 'yearly']:
+    for frequency in Config.FREQUENCIES:
         print(f'Downloading: {frequency} related items.')
-        urls = url_list[frequency]
-        download_webpages(Config, urls)
+        main(frequency)
+
