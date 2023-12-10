@@ -4,11 +4,11 @@
     "daily": [
         {
             "url": "https://github.com/SeleniumHQ/docker-selenium",
-            "save_to_path": "/home/daniel/Documents/GitHub/Simple-Webpage-Downloader/source/downloads"
+            "save_to_path": "./downloads"
         },
         {
             "url": "https://github.com/SeleniumHQ/docker-selenium",
-            "save_to_path": "/home/daniel/Documents/GitHub/Simple-Webpage-Downloader/source/downloads"
+            "save_to_path": "./downloads"
         }
     ],
     "weekly": [],

@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from starlette.responses import RedirectResponse
 import webpage_downloader
+from config import Config
 
 app = FastAPI()
 
