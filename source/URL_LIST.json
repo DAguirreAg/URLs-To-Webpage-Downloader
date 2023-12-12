@@ -3,11 +3,11 @@
     "hourly": [],
     "daily": [
         {
-            "url": "https://github.com/SeleniumHQ/docker-selenium",
+            "url": "https://www.github.com/",
             "save_to_path": "./downloads"
         },
         {
-            "url": "https://github.com/SeleniumHQ/docker-selenium",
+            "url": "https://www.google.com/",
             "save_to_path": "./downloads"
         }
     ],
