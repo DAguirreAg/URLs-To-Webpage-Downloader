@@ -1,4 +1,4 @@
-# Simple-Webpage-Downloader
+# URLs-To-Webpage-Downloader
 
 There are times where we need to download webpages in some intervals (hourly, daily, weekly, ...). This repository solves this issue by providing an easy to setup service that will trigger the downloads and save the files to an specified folder in a coordinated way by simply modifying the `URL_LIST.json` file.
 
